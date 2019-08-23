@@ -13,7 +13,7 @@ const Object1 = {
   weight: "7000kg",
   length: "12m",
   period: "Late Cretaceous",
-    roar: function(){
+    roar: () => {
       return "RAWERSRARARWERSARARARRR!";
     }
 };
@@ -140,7 +140,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 const lowCaseAnimalNames = [];
   for(let i =0; i < zooAnimals.length; i++){
-    lowCaseAnimalNames.push(zooAnimals[i].animal_name.toLocaleLowerCase());
+    lowCaseAnimalNames.push(zooAnimals[i].animal_name.toLowerCase());
   }
 console.log(lowCaseAnimalNames);
 
